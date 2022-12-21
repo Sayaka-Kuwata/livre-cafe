@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 export default {
   srcDir: "src/",
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -37,5 +38,12 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: "jquery",
+        $: "jquery",
+      }),
+    ],
+  },
 };

@@ -1,0 +1,7 @@
+@use "/src/assets/scss/foundation/variable" as var;
+
+@mixin font-20-bold($color: var.$color-primary-darken) {
+  color: $color;
+  font-size: 200px;
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+@use "variable" as var;
+@use "../global" as global;
+
+a {
+  text-decoration: none;
+}
+
+.c-flex {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

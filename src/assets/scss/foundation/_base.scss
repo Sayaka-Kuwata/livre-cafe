@@ -13,3 +13,21 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.pc-only {
+  display: block;
+}
+
+.tb-only {
+  display: none;
+}
+
+@include global.media-query("tb") {
+  .pc-only {
+    display: none;
+  }
+
+  .tb-only {
+    display: block;
+  }
+}

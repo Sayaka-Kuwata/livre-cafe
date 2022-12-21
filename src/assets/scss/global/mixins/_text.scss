@@ -1,7 +1,37 @@
 @use "/src/assets/scss/foundation/variable" as var;
 
-@mixin font-20-bold($color: var.$color-primary-darken) {
+@mixin font-60-bold($color: var.$color-primary) {
   color: $color;
-  font-size: 200px;
+  font-size: 60px;
   font-weight: bold;
+}
+
+@mixin font-40-bold($color: var.$color-primary) {
+  color: $color;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@mixin font-20-bold($color: var.$color-primary) {
+  color: $color;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@mixin font-18-bold($color: var.$color-primary) {
+  color: $color;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@mixin font-18-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@mixin font-12-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 12px;
+  font-weight: normal;
 }

@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 export default {
   srcDir: "src/",
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -16,7 +17,13 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [{ src: "@/assets/scss/style.scss", lang: "scss" }],
+  styleResources: {
+    scss: [
+      "@/assets/scss/foundation/_variable.scss",
+      "@/assets/scss/mixins/index.scss",
+    ],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -31,5 +38,12 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: "jquery",
+        $: "jquery",
+      }),
+    ],
+  },
 };

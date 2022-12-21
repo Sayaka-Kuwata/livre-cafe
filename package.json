@@ -16,5 +16,9 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery": "^3.6.3",
+    "sass": "^1.57.1",
+    "sass-loader": "10"
+  }
 }

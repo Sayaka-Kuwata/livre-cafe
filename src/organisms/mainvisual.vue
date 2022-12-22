@@ -98,4 +98,42 @@ export default {
   justify-items: center;
   align-items: center;
 }
+
+@include global.media-query("sp") {
+  .mv {
+    padding-top: 90px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .mv-left-text,
+  .mv-right-text {
+    padding: 0 10px;
+  }
+}
+
+@include global.media-query("sp-small") {
+  .mv-contents {
+    grid-template-rows: 480px;
+  }
+
+  .mv-capture {
+    img {
+      height: 480px;
+    }
+  }
+}
+
+@include global.media-query("sp-extra-small") {
+  .mv-contents {
+    grid-template-rows: 350px;
+  }
+
+  .mv-capture {
+    img {
+      height: 350px;
+    }
+  }
+}
 </style>

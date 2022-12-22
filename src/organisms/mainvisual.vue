@@ -60,15 +60,15 @@ export default {
     position: absolute;
     left: 0;
     opacity: 0;
-    animation: mv-animation 30s infinite;
+    animation: mv-animation 9s infinite;
     &:nth-child(1) {
       animation-delay: 0s;
     }
     &:nth-child(2) {
-      animation-delay: 10s;
+      animation-delay: 3s;
     }
     &:nth-child(3) {
-      animation-delay: 20s;
+      animation-delay: 6s;
     }
   }
 }
@@ -104,6 +104,13 @@ export default {
     padding-top: 90px;
     p {
       font-size: 18px;
+      letter-spacing: 0.4rem;
+    }
+  }
+
+  .mv-capture {
+    img {
+      object-position: 50%;
     }
   }
 

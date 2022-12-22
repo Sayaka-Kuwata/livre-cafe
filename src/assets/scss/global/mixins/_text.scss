@@ -12,10 +12,22 @@
   font-weight: bold;
 }
 
+@mixin font-24-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 24px;
+  font-weight: normal;
+}
+
 @mixin font-20-bold($color: var.$color-primary) {
   color: $color;
   font-size: 20px;
   font-weight: bold;
+}
+
+@mixin font-20-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 @mixin font-18-bold($color: var.$color-primary) {

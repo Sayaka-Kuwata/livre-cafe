@@ -1,6 +1,10 @@
 @use "variable" as var;
 @use "../global" as global;
 
+body {
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+}
+
 a {
   text-decoration: none;
 }

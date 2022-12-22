@@ -35,7 +35,12 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["nuxt-webfontloader"],
+  webfontloader: {
+    google: {
+      families: ["Exo+2:200,500"],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -57,9 +57,12 @@ export default {
   z-index: 999;
   h1 {
     @include global.font-60-bold;
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 0.2rem;
     p {
       @include global.font-18-normal;
       text-align: center;
+      letter-spacing: 0;
     }
     &:hover {
       opacity: 0.7;
@@ -74,7 +77,9 @@ export default {
     height: 90px;
   }
   li {
-    @include global.font-20-bold;
+    @include global.font-22-bold;
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 0.05rem;
     flex: 1;
     display: flex;
     justify-content: flex-end;

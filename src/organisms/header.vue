@@ -52,7 +52,9 @@ export default {
 .header-contents {
   width: 100%;
   position: fixed;
+  background-color: var.$color-white;
   padding: 10px 30px 40px;
+  z-index: 999;
   h1 {
     @include global.font-60-bold;
     p {
@@ -87,7 +89,7 @@ export default {
 }
 
 .shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 @include global.media-query("tb") {

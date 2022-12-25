@@ -27,7 +27,7 @@ export default {
 @use "/src/assets/scss/foundation/variable" as var;
 
 .mv {
-  padding-top: 140px;
+  padding: 140px 0 100px;
 
   p {
     @include global.font-20-normal(var.$color-black);
@@ -101,7 +101,7 @@ export default {
 
 @include global.media-query("sp") {
   .mv {
-    padding-top: 90px;
+    padding: 90px 0 80px;
     p {
       font-size: 18px;
       letter-spacing: 0.4rem;

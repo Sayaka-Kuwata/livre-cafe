@@ -38,4 +38,11 @@ h2 {
     margin-left: 10px;
   }
 }
+
+@include global.media-query("sp") {
+  h2 {
+    font-size: 32px;
+    letter-spacing: 0.15rem;
+  }
+}
 </style>

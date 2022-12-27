@@ -48,6 +48,12 @@
   font-weight: normal;
 }
 
+@mixin font-16-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 16px;
+  font-weight: norma;
+}
+
 @mixin font-12-normal($color: var.$color-primary) {
   color: $color;
   font-size: 12px;

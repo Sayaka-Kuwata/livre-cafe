@@ -47,6 +47,8 @@ ul {
     @include global.font-16-normal(var.$color-black);
     letter-spacing: 0.05rem;
     line-height: 1.3;
+    text-align: justify;
+    text-justify: inter-ideograph;
     white-space: pre-wrap;
   }
 }
@@ -63,6 +65,24 @@ ul {
     p {
       font-size: 14px;
     }
+  }
+}
+
+@include global.media-query("sp") {
+  .news-card {
+    flex-direction: column;
+    p {
+      letter-spacing: 0.03rem;
+      line-height: 1.5;
+    }
+  }
+
+  ul {
+    gap: 24px;
+  }
+
+  .column--3 {
+    width: 100%;
   }
 }
 </style>

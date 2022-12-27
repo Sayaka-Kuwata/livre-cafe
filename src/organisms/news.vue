@@ -78,4 +78,10 @@ export default {
   margin: 0 auto;
   padding: 80px 0;
 }
+
+@include global.media-query("pc-sp") {
+  .news-wrapper {
+    padding: 80px;
+  }
+}
 </style>

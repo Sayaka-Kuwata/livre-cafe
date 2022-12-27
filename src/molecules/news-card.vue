@@ -50,4 +50,19 @@ ul {
     white-space: pre-wrap;
   }
 }
+
+@include global.media-query("tb") {
+  .column--3 {
+    width: 46%;
+  }
+
+  .news-card {
+    time {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
 </style>

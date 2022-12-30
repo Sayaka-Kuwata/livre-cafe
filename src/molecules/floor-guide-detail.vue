@@ -1,6 +1,5 @@
 <template>
   <div class="guide-detail">
-    <p>{{ text }}</p>
     <img :src="url" />
     <div class="floor-guide-title">
       <p>{{ title }}</p>
@@ -11,7 +10,7 @@
 <script>
 export default {
   name: "FloorGuideDetail",
-  props: ["text", "url", "title"],
+  props: ["url", "title"],
 };
 </script>
 
@@ -21,10 +20,16 @@ export default {
 
 .guide-detail {
   text-align: center;
-  p {
-    @include global.font-80-bold(var.$color-black);
-    text-align: left;
-    margin: 0 0 24px 150px;
+  position: relative;
+  &::before {
+    counter-increment: number 1;
+    content: counter(number) "F";
+    @include global.font-90-bold;
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    top: -60px;
+    left: 150px;
   }
   img {
     margin-bottom: 32px;

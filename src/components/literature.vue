@@ -1,6 +1,6 @@
 <template>
   <div class="guide-inner">
-    <FloorGuideDetail :text="text" :title="title" :url="url" />
+    <FloorGuideDetail :title="title" :url="url" />
     <div class="detail-text">
       <p>
         純文学、エンターテイメント、ミステリーなど幅広いジャンルの小説をご用意しております。<br />最新刊はもちろん、海外の小説も取り揃えておりますのでお気軽に手にとってご覧ください。少数ではありますが洋書もございます。中央にテーブルがありますので、座りながらじっくり文学の世界をお楽しみください。
@@ -21,7 +21,6 @@ export default {
   },
   data() {
     return {
-      text: "1F",
       url: ImageLiterature,
       title: "文学",
     };

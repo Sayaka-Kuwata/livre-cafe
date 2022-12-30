@@ -1,6 +1,6 @@
 <template>
   <div class="guide-inner">
-    <FloorGuideDetail :text="text" :title="title" :url="url" />
+    <FloorGuideDetail :title="title" :url="url" />
     <div class="detail-text">
       <p>
         インテリア、デッサン、画集など、一般的な書店ではなかなか手に入らない書籍を多数ご用意しております。二階にも僅かですがテーブルなどフリースペースがあります。
@@ -21,7 +21,6 @@ export default {
   },
   data() {
     return {
-      text: "3F",
       url: ImageLiving,
       title: "暮らし・健康・料理",
     };
@@ -34,6 +33,6 @@ export default {
 @use "/src/assets/scss/foundation/variable" as var;
 
 .guide-inner {
-  margin-bottom: 64px;
+  margin-bottom: 96px;
 }
 </style>

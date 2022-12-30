@@ -1,9 +1,10 @@
 $breakpoint: (
-  tb: "screen and (max-width: 840px)",
+  //   tb: "screen and (max-width: 840px)",
+  tb: "screen and (max-width: 890px)",
   sp: "screen and (max-width: 520px)",
   sp-small: "screen and (max-width: 380px)",
   sp-extra-small: "screen and (max-width: 320px)",
-  pc-sp: "screen and (max-width: 1200px)",
+  pc-sp: "screen and (max-width: 1200px)"
 );
 
 @use "sass:map";

@@ -1,6 +1,6 @@
 <template>
   <div class="guide-inner">
-    <FloorGuideDetail :text="text" :title="title" :url="url" />
+    <FloorGuideDetail :title="title" :url="url" />
     <div class="detail-text">
       <p>
         インテリア、デッサン、画集など、一般的な書店ではなかなか手に入らない書籍を多数ご用意しております。二階にも僅かですがテーブルなどフリースペースがあります。
@@ -21,7 +21,6 @@ export default {
   },
   data() {
     return {
-      text: "2F",
       url: ImageArt,
       title: "アート・建築・デザイン",
     };

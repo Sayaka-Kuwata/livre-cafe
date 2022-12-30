@@ -1,5 +1,17 @@
 @use "/src/assets/scss/foundation/variable" as var;
 
+@mixin font-90-bold($color: var.$color-primary) {
+  color: $color;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+@mixin font-80-bold($color: var.$color-primary) {
+  color: $color;
+  font-size: 80px;
+  font-weight: bold;
+}
+
 @mixin font-60-bold($color: var.$color-primary) {
   color: $color;
   font-size: 60px;

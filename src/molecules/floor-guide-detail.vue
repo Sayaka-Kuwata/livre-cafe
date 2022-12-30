@@ -43,4 +43,30 @@ export default {
     text-align: center;
   }
 }
+
+@include global.media-query("pc-sp") {
+  .guide-detail {
+    &::before {
+      top: -100px;
+      left: 100px;
+    }
+  }
+}
+
+@include global.media-query("tb") {
+  .guide-detail {
+    &::before {
+      top: -120px;
+      left: 80px;
+    }
+  }
+}
+
+@include global.media-query("tb-small") {
+  .guide-detail {
+    &::before {
+      left: 0px;
+    }
+  }
+}
 </style>

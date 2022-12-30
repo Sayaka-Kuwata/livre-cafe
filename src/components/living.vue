@@ -35,4 +35,13 @@ export default {
 .guide-inner {
   margin-bottom: 96px;
 }
+
+@include global.media-query("tb") {
+  .guide-inner {
+    margin: 56px 0 180px;
+    &:last-of-type {
+      margin: 56px 0 0;
+    }
+  }
+}
 </style>

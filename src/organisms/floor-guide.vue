@@ -38,4 +38,10 @@ export default {
   padding: 120px 0 80px;
   counter-reset: number 0;
 }
+
+@include global.media-query("tb-small") {
+  .floor-guide-wrapper {
+    padding: 80px;
+  }
+}
 </style>

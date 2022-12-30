@@ -65,7 +65,27 @@ export default {
 @include global.media-query("tb-small") {
   .guide-detail {
     &::before {
+      font-size: 80px;
       left: 0px;
+    }
+  }
+}
+
+@include global.media-query("sp") {
+  .guide-detail {
+    &::before {
+      font-size: 60px;
+      top: -70px;
+    }
+    img {
+      margin-bottom: 24px;
+    }
+  }
+
+  .floor-guide-title {
+    p {
+      font-size: 24px;
+      margin-bottom: 8px;
     }
   }
 }

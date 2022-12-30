@@ -40,4 +40,14 @@ export default {
     margin: 0 auto;
   }
 }
+
+@include global.media-query("sp") {
+  .detail-text {
+    p {
+      font-size: 14px;
+      letter-spacing: 0.03rem;
+      line-height: 1.5;
+    }
+  }
+}
 </style>

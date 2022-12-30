@@ -44,4 +44,12 @@ export default {
     padding: 80px;
   }
 }
+
+@include global.media-query("sp") {
+  .floor-guide-wrapper {
+    max-width: 100%;
+    padding: 40px 0;
+    margin: 0 20px;
+  }
+}
 </style>

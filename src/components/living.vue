@@ -44,4 +44,10 @@ export default {
     }
   }
 }
+
+@include global.media-query("sp") {
+  .guide-inner {
+    margin: 56px 0 96px;
+  }
+}
 </style>

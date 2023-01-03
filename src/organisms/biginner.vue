@@ -97,4 +97,25 @@ export default {
     max-width: 450px;
   }
 }
+
+@include global.media-query("tb") {
+  .biginner-detail {
+    padding: 75px 0 80px;
+  }
+
+  .biginner-detail-inner {
+    flex-direction: column-reverse;
+  }
+
+  .biginner-detail-inner {
+    gap: 32px;
+    padding: 32px 80px 0;
+  }
+
+  .biginner-detail-image,
+  .biginner-detail-text {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
 </style>

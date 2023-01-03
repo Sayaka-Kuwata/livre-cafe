@@ -5,6 +5,7 @@
     <Concept />
     <News />
     <FloorGuide />
+    <Biginner />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import MainVisual from "@/organisms/mainvisual";
 import Concept from "@/organisms/concept";
 import News from "@/organisms/news";
 import FloorGuide from "@/organisms/floor-guide";
+import Biginner from "@/organisms/biginner";
 
 export default {
   name: "IndexPage",
@@ -23,6 +25,7 @@ export default {
     Concept,
     News,
     FloorGuide,
+    Biginner,
   },
 };
 </script>

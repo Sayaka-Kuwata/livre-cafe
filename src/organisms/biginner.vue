@@ -92,5 +92,9 @@ export default {
   .biginner-detail-inner {
     padding: 80px;
   }
+
+  .biginner-detail-image {
+    max-width: 450px;
+  }
 }
 </style>

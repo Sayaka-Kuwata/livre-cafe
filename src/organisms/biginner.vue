@@ -118,4 +118,51 @@ export default {
     margin: 0 auto;
   }
 }
+
+@include global.media-query("sp") {
+  .for-biginner {
+    padding: 35px;
+    &::before {
+      border: 15px solid transparent;
+      border-top: 15px solid var.$color-white-smoke;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .biginner-detail {
+    padding: 40px 0;
+  }
+
+  .biginner-detail-inner {
+    padding: 0;
+    margin: 0 20px;
+    gap: 24px;
+  }
+
+  .biginner-detail-text {
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      letter-spacing: 0.03rem;
+    }
+  }
+}
+
+@include global.media-query("sp-small") {
+  .for-biginner {
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .biginner-detail {
+    span {
+      font-size: 28px;
+    }
+  }
+}
 </style>

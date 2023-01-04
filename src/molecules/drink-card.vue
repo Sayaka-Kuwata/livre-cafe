@@ -58,4 +58,12 @@ export default {
     padding: 80px;
   }
 }
+
+@include global.media-query("tb") {
+  .drink-card-wrapper {
+    ul {
+      justify-content: space-between;
+    }
+  }
+}
 </style>

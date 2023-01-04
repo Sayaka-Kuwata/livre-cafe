@@ -13,6 +13,10 @@ a {
   display: flex;
 }
 
+.column--3 {
+  width: 30%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -33,5 +37,15 @@ img {
 
   .tb-only {
     display: block;
+  }
+
+  .column--3 {
+    width: 46%;
+  }
+}
+
+@include global.media-query("sp") {
+  .column--3 {
+    width: 100%;
   }
 }

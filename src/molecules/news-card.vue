@@ -27,10 +27,6 @@ ul {
   gap: 60px 20px;
 }
 
-.column--3 {
-  width: 30%;
-}
-
 .news-card {
   img {
     margin-bottom: 16px;
@@ -54,10 +50,6 @@ ul {
 }
 
 @include global.media-query("tb") {
-  .column--3 {
-    width: 46%;
-  }
-
   .news-card {
     time {
       font-size: 16px;
@@ -79,10 +71,6 @@ ul {
 
   ul {
     gap: 24px;
-  }
-
-  .column--3 {
-    width: 100%;
   }
 }
 </style>

@@ -9,6 +9,7 @@
     <Drink />
     <Access />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import Biginner from "@/organisms/biginner";
 import Drink from "@/organisms/drink";
 import Access from "@/organisms/access";
 import Contact from "@/organisms/contact";
+import Footer from "@/organisms/footer";
 
 export default {
   name: "IndexPage",
@@ -35,6 +37,7 @@ export default {
     Drink,
     Access,
     Contact,
+    Footer,
   },
 };
 </script>

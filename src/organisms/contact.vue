@@ -67,4 +67,41 @@ export default {
     }
   }
 }
+
+@include global.media-query("sp") {
+  .contact-inner {
+    padding: 40px 0;
+    margin: 0 20px;
+    P {
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 16px;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      br {
+        display: none;
+      }
+    }
+    ul {
+      max-width: 80%;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@include global.media-query("sp-small") {
+  .contact-inner {
+    ul {
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}
 </style>

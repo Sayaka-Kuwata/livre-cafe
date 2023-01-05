@@ -11,7 +11,7 @@
         </li>
       </ul>
       <address>
-        〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105<span
+        〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105<br class="tb-only" /><span
           >TEL 03-1234-5678</span
         >
       </address>
@@ -32,8 +32,7 @@ export default {
 
 footer {
   background-color: var.$color-primary;
-  padding-top: 96px;
-  padding-bottom: 32px;
+  padding: 96px 0 32px 0;
 }
 
 .footer-logo {
@@ -73,6 +72,37 @@ footer {
     @include global.font-10-normal(var.$color-white);
     font-family: YuGothic, "Yu Gothic", sans-serif;
     margin-bottom: 0;
+  }
+}
+
+@include global.media-query("sp") {
+  footer {
+    background-color: var.$color-primary;
+    padding: 64px 0 32px 0;
+  }
+
+  .footer-logo {
+    p {
+      font-size: 45px;
+      margin-bottom: 32px;
+      span {
+        font-size: 14px;
+      }
+    }
+
+    ul {
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+
+    li {
+      width: 32px;
+    }
+
+    address {
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
   }
 }
 </style>

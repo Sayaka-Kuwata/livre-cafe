@@ -87,4 +87,26 @@ address {
     padding: 80px;
   }
 }
+
+@include global.media-query("tb") {
+  .access-wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    img {
+      order: 2;
+      margin: 0 auto 24px;
+    }
+  }
+
+  .address-detail {
+    order: 1;
+    p {
+      margin: 0 auto 32px;
+    }
+  }
+
+  address {
+    order: 3;
+  }
+}
 </style>

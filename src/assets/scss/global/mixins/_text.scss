@@ -30,6 +30,12 @@
   font-weight: bold;
 }
 
+@mixin font-35-normal($color: var.$color-primary) {
+  color: $color;
+  font-size: 35px;
+  font-weight: normal;
+}
+
 @mixin font-24-bold($color: var.$color-primary) {
   color: $color;
   font-size: 24px;

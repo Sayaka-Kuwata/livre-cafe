@@ -4,19 +4,19 @@
       <template v-slot:title-text>ACCESS</template>
     </TitleBorder>
     <div class="access-wrapper">
-      <div class="access-wrapper-inner c-flex">
+      <div class="access-wrapper-inner">
         <img src="@/assets/images/figure/access-livre.png" />
         <div class="address-detail">
           <p>LIVRE<span>BOOK AND CAFE</span></p>
-          <address>
-            〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105
-            JR吉祥寺駅公園口より徒歩5分<br />
-            TEL. 03-1234-5678<br />
-            営業時間:11:00〜23:00<br />
-            休業日:年中無休 (年末年始等をのぞく)<br />
-            DRINKのご注文は、22:30ラストオーダーとさせていただきます。
-          </address>
         </div>
+        <address>
+          〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105
+          JR吉祥寺駅公園口より徒歩5分<br />
+          TEL. 03-1234-5678<br />
+          営業時間:11:00〜23:00<br />
+          休業日:年中無休 (年末年始等をのぞく)<br />
+          DRINKのご注文は、22:30ラストオーダーとさせていただきます。
+        </address>
       </div>
     </div>
   </section>
@@ -44,16 +44,22 @@ export default {
 }
 
 .access-wrapper-inner {
-  gap: 50px;
+  display: grid;
+  grid-template-rows: 113px 1fr;
+  grid-template-columns: 380px 1fr;
+  gap: 0 50px;
   img {
     max-width: 380px;
     height: 293px;
     object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
   }
 }
 
 .address-detail {
-  flex: 1;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   p {
     @include global.font-60-bold;
     font-family: "Exo 2", sans-serif;
@@ -67,10 +73,13 @@ export default {
       text-align: center;
     }
   }
-  address {
-    font-size: 18px;
-    line-height: 2;
-  }
+}
+
+address {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 18px;
+  line-height: 2;
 }
 
 @include global.media-query("pc-sp") {

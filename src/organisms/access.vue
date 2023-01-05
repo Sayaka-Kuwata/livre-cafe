@@ -15,7 +15,7 @@
           TEL. 03-1234-5678<br />
           営業時間:11:00〜23:00<br />
           休業日:年中無休 (年末年始等をのぞく)<br />
-          DRINKのご注文は、22:30ラストオーダーとさせていただきます。
+          DRINKのご注文は22:30ラストオーダーとさせていただきます。
         </address>
       </div>
     </div>
@@ -107,6 +107,36 @@ address {
 
   address {
     order: 3;
+  }
+}
+
+@include global.media-query("sp") {
+  .access-wrapper {
+    max-width: 100%;
+    padding: 40px 0;
+    margin: 0 20px;
+  }
+
+  .access-wrapper-inner {
+    img {
+      max-width: 100%;
+      height: 240px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .address-detail {
+    p {
+      font-size: 45px;
+      margin-bottom: 24px;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  address {
+    font-size: 15px;
   }
 }
 </style>

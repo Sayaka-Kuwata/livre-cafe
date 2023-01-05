@@ -7,6 +7,7 @@
     <FloorGuide />
     <Biginner />
     <Drink />
+    <Access />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import News from "@/organisms/news";
 import FloorGuide from "@/organisms/floor-guide";
 import Biginner from "@/organisms/biginner";
 import Drink from "@/organisms/drink";
+import Access from "@/organisms/access";
 
 export default {
   name: "IndexPage",
@@ -29,6 +31,7 @@ export default {
     FloorGuide,
     Biginner,
     Drink,
+    Access,
   },
 };
 </script>

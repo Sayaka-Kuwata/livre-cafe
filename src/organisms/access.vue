@@ -1,5 +1,5 @@
 <template>
-  <section class="access">
+  <section class="access" id="Access">
     <TitleBorder>
       <template v-slot:title-text>ACCESS</template>
     </TitleBorder>

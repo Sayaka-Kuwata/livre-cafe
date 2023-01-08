@@ -1,5 +1,5 @@
 <template>
-  <section class="drink-menu">
+  <section class="drink-menu" id="Drink">
     <TitleBorder>
       <template v-slot:title-text>DRINK</template>
     </TitleBorder>

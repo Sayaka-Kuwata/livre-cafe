@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="Floor">
     <TitleBorder>
       <template v-slot:title-text>FLOOR GUIDE</template>
     </TitleBorder>

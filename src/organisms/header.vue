@@ -9,11 +9,11 @@
     <div class="bar tb-only"><span></span><span></span><span></span></div>
     <nav class="nav-menu">
       <ul class="c-flex">
-        <li><nuxt-link to="/">NEWS</nuxt-link></li>
-        <li><nuxt-link to="/">FLOOR</nuxt-link></li>
-        <li><nuxt-link to="/">DRINK</nuxt-link></li>
-        <li><nuxt-link to="/">ACCESS</nuxt-link></li>
-        <li><nuxt-link to="/">CONTACT</nuxt-link></li>
+        <li><a v-scroll-to="'#News'">NEWS</a></li>
+        <li><a v-scroll-to="'#Floor'">FLOOR</a></li>
+        <li><a v-scroll-to="'#Drink'">DRINK</a></li>
+        <li><a v-scroll-to="'#Access'">ACCESS</a></li>
+        <li><a v-scroll-to="'#Contact'">CONTACT</a></li>
       </ul>
     </nav>
   </header>

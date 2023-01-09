@@ -10,6 +10,7 @@
     <Access />
     <Contact />
     <Footer />
+    <TopButton />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Drink from "@/organisms/drink";
 import Access from "@/organisms/access";
 import Contact from "@/organisms/contact";
 import Footer from "@/organisms/footer";
+import TopButton from "@/atoms/top-button";
 
 export default {
   name: "IndexPage",
@@ -38,6 +40,7 @@ export default {
     Access,
     Contact,
     Footer,
+    TopButton,
   },
 };
 </script>

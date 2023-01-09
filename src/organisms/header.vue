@@ -1,5 +1,5 @@
 <template>
-  <header class="header-contents c-flex">
+  <header class="header-contents c-flex" id="Top">
     <h1>
       <nuxt-link to="/"
         >LIVRE

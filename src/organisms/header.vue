@@ -186,6 +186,7 @@ export default {
     li {
       color: var.$color-white;
       padding: 10px;
+      justify-content: center;
     }
   }
 }

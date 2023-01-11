@@ -1,14 +1,16 @@
 <template>
-  <FadeIncomponent>
-    <div class="guide-inner">
+  <div class="guide-inner">
+    <FadeIncomponent>
       <FloorGuideDetail :title="title" :url="url" />
-      <div class="detail-text">
+    </FadeIncomponent>
+    <div class="detail-text">
+      <FadeIncomponent>
         <p>
           インテリア、デッサン、画集など、一般的な書店ではなかなか手に入らない書籍を多数ご用意しております。二階にも僅かですがテーブルなどフリースペースがあります。
         </p>
-      </div>
+      </FadeIncomponent>
     </div>
-  </FadeIncomponent>
+  </div>
 </template>
 
 <script>

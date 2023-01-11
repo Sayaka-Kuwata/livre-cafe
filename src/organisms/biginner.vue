@@ -1,27 +1,39 @@
 <template>
   <section>
-    <div class="for-biginner">
-      <p>はじめてご利用の方へ</p>
-    </div>
-    <div class="biginner-detail">
-      <span>Let's have fun!</span>
-      <div class="biginner-detail-inner c-flex">
-        <div class="biginner-detail-text">
-          <p>
-            LIVREではドリンクを販売しています。<br />購入しなくても店内であれば飲み物を飲みながらご自由に本を読んで頂いて構いません。<br />各フロアにテーブルもご用意しておりますので、たまには時間を忘れ、ゆったりとしたひと時をお楽しみください。
-          </p>
-        </div>
-        <div class="biginner-detail-image">
-          <img src="@/assets/images/figure/biginner.png" />
-        </div>
+    <FadeIncomponent>
+      <div class="for-biginner">
+        <p>はじめてご利用の方へ</p>
       </div>
+    </FadeIncomponent>
+
+    <div class="biginner-detail">
+      <FadeIncomponent>
+        <span>Let's have fun!</span>
+      </FadeIncomponent>
+      <FadeIncomponent>
+        <div class="biginner-detail-inner c-flex">
+          <div class="biginner-detail-text">
+            <p>
+              LIVREではドリンクを販売しています。<br />購入しなくても店内であれば飲み物を飲みながらご自由に本を読んで頂いて構いません。<br />各フロアにテーブルもご用意しておりますので、たまには時間を忘れ、ゆったりとしたひと時をお楽しみください。
+            </p>
+          </div>
+          <div class="biginner-detail-image">
+            <img src="@/assets/images/figure/biginner.png" />
+          </div>
+        </div>
+      </FadeIncomponent>
     </div>
   </section>
 </template>
 
 <script>
+import FadeIncomponent from "@/atoms/fade-in";
+
 export default {
   name: "Biginner",
+  components: {
+    FadeIncomponent,
+  },
 };
 </script>
 

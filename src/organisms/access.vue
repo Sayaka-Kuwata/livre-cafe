@@ -4,31 +4,35 @@
       <template v-slot:title-text>ACCESS</template>
     </TitleBorder>
     <div class="access-wrapper">
-      <div class="access-wrapper-inner">
-        <img src="@/assets/images/figure/access-livre.png" />
-        <div class="address-detail">
-          <p>LIVRE<span>BOOK AND CAFE</span></p>
+      <FadeIncomponent>
+        <div class="access-wrapper-inner">
+          <img src="@/assets/images/figure/access-livre.png" />
+          <div class="address-detail">
+            <p>LIVRE<span>BOOK AND CAFE</span></p>
+          </div>
+          <address>
+            〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105
+            JR吉祥寺駅公園口より徒歩5分<br />
+            TEL. 03-1234-5678<br />
+            営業時間:11:00〜23:00<br />
+            休業日:年中無休 (年末年始等をのぞく)<br />
+            DRINKのご注文は22:30ラストオーダーとさせていただきます。
+          </address>
         </div>
-        <address>
-          〒180-0003 東京都武蔵野市吉祥寺南町3-8-1-105
-          JR吉祥寺駅公園口より徒歩5分<br />
-          TEL. 03-1234-5678<br />
-          営業時間:11:00〜23:00<br />
-          休業日:年中無休 (年末年始等をのぞく)<br />
-          DRINKのご注文は22:30ラストオーダーとさせていただきます。
-        </address>
-      </div>
+      </FadeIncomponent>
     </div>
   </section>
 </template>
 
 <script>
 import TitleBorder from "@/atoms/title-border";
+import FadeIncomponent from "@/atoms/fade-in";
 
 export default {
   name: "Access",
   components: {
     TitleBorder,
+    FadeIncomponent,
   },
 };
 </script>

@@ -1,24 +1,31 @@
 <template>
-  <div class="drink-card-wrapper">
-    <ul class="c-flex">
-      <li class="column--3" v-for="card in cards" :key="cards.id">
-        <div class="drink-card-inner">
-          <img :src="card.drinkImage" />
-          <div class="menu-title">
-            <p>{{ card.title }}</p>
+  <FadeIncomponent>
+    <div class="drink-card-wrapper">
+      <ul class="c-flex">
+        <li class="column--3" v-for="card in cards" :key="cards.id">
+          <div class="drink-card-inner">
+            <img :src="card.drinkImage" />
+            <div class="menu-title">
+              <p>{{ card.title }}</p>
+            </div>
+            <ul class="menu-item">
+              <li v-for="item in card.items">{{ item.text }}</li>
+            </ul>
           </div>
-          <ul class="menu-item">
-            <li v-for="item in card.items">{{ item.text }}</li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
+        </li>
+      </ul>
+    </div>
+  </FadeIncomponent>
 </template>
 
 <script>
+import FadeIncomponent from "@/atoms/fade-in";
+
 export default {
   name: "DrinkCard",
+  components: {
+    FadeIncomponent,
+  },
   props: ["cards", "items"],
 };
 </script>

@@ -4,7 +4,9 @@
       <template v-slot:title-text>NEWS</template>
     </TitleBorder>
     <div class="news-wrapper">
-      <NewsCard :cards="cards" />
+      <FadeIncomponent>
+        <NewsCard :cards="cards" />
+      </FadeIncomponent>
     </div>
   </section>
 </template>
@@ -18,6 +20,7 @@ import ImageBeer from "@/assets/images/figure/news_03.png";
 import ImageReading1 from "@/assets/images/figure/news_04.png";
 import ImageDrink from "@/assets/images/figure/news_05.png";
 import ImageOpen from "@/assets/images/figure/news_06.png";
+import FadeIncomponent from "@/atoms/fade-in";
 
 export default {
   name: "News",
@@ -29,6 +32,7 @@ export default {
     ImageBeer,
     ImageDrink,
     ImageOpen,
+    FadeIncomponent,
   },
   data() {
     return {

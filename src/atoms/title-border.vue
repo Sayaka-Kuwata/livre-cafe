@@ -1,12 +1,18 @@
 <template>
-  <h2 class="title-border c-flex">
-    <slot name="title-text"></slot>
-  </h2>
+  <FadeIncomponent>
+    <h2 class="title-border c-flex">
+      <slot name="title-text"></slot>
+    </h2>
+  </FadeIncomponent>
 </template>
 
 <script>
+import FadeIncomponent from "@/atoms/fade-in";
 export default {
   name: "TitleBorder",
+  components: {
+    FadeIncomponent,
+  },
 };
 </script>
 

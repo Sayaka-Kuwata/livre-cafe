@@ -4,36 +4,40 @@
       <template v-slot:title-text>CONTACT</template>
     </TitleBorder>
     <div class="contact-inner">
-      <p>
-        イベントのご予約やその他お問い合わせは<br />下記電話かメールでお気軽にお問い合わせください
-      </p>
-      <address>
-        <ul>
-          <li>
-            <div class="contact-detail c-flex">
-              <img src="@/assets/images/icon/tel.svg" />
-              <span>03-1234-5678</span>
-            </div>
-          </li>
-          <li>
-            <div class="contact-detail c-flex">
-              <img src="@/assets/images/icon/mail.svg" />
-              <span>info@livre.com</span>
-            </div>
-          </li>
-        </ul>
-      </address>
+      <FadeIncomponent>
+        <p>
+          イベントのご予約やその他お問い合わせは<br />下記電話かメールでお気軽にお問い合わせください
+        </p>
+        <address>
+          <ul>
+            <li>
+              <div class="contact-detail c-flex">
+                <img src="@/assets/images/icon/tel.svg" />
+                <span>03-1234-5678</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail c-flex">
+                <img src="@/assets/images/icon/mail.svg" />
+                <span>info@livre.com</span>
+              </div>
+            </li>
+          </ul>
+        </address>
+      </FadeIncomponent>
     </div>
   </section>
 </template>
 
 <script>
 import TitleBorder from "@/atoms/title-border";
+import FadeIncomponent from "@/atoms/fade-in";
 
 export default {
   name: "Contact",
   components: {
     TitleBorder,
+    FadeIncomponent,
   },
 };
 </script>

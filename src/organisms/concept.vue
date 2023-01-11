@@ -4,26 +4,30 @@
       <template v-slot:title-text>CONCEPT</template>
     </TitleBorder>
     <div class="concept-text">
-      <p>
-        LIVREでは新しいカタチの本屋を目指します。<br />ネットに繋げば簡単に手に入る時代。<br />何気なく立ち寄った書店で「偶然」本と出会う機会も少なくなっているのではないでしょうか。
-      </p>
-      <p>
-        お仕事の帰りにふと癒しの本に出会う。待ち合わせの僅かな時間にずっと先の未来の本に出会う。
-      </p>
-      <p>
-        私たちは実際に本に触れ、その時の自分に必要な本に「偶然」出会うきっかけになれたらと思っています。
-      </p>
+      <FadeIncomponent>
+        <p>
+          LIVREでは新しいカタチの本屋を目指します。<br />ネットに繋げば簡単に手に入る時代。<br />何気なく立ち寄った書店で「偶然」本と出会う機会も少なくなっているのではないでしょうか。
+        </p>
+        <p>
+          お仕事の帰りにふと癒しの本に出会う。待ち合わせの僅かな時間にずっと先の未来の本に出会う。
+        </p>
+        <p>
+          私たちは実際に本に触れ、その時の自分に必要な本に「偶然」出会うきっかけになれたらと思っています。
+        </p>
+      </FadeIncomponent>
     </div>
   </section>
 </template>
 
 <script>
 import TitleBorder from "@/atoms/title-border";
+import FadeIncomponent from "@/atoms/fade-in";
 
 export default {
   name: "Concept",
   components: {
     TitleBorder,
+    FadeIncomponent,
   },
 };
 </script>

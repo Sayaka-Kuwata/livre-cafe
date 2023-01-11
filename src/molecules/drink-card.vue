@@ -1,21 +1,25 @@
 <template>
-  <FadeIncomponent>
-    <div class="drink-card-wrapper">
-      <ul class="c-flex">
-        <li class="column--3" v-for="card in cards" :key="cards.id">
-          <div class="drink-card-inner">
+  <div class="drink-card-wrapper">
+    <ul class="c-flex">
+      <li class="column--3" v-for="card in cards" :key="cards.id">
+        <div class="drink-card-inner">
+          <FadeIncomponent>
             <img :src="card.drinkImage" />
-            <div class="menu-title">
+          </FadeIncomponent>
+          <div class="menu-title">
+            <FadeIncomponent>
               <p>{{ card.title }}</p>
-            </div>
-            <ul class="menu-item">
-              <li v-for="item in card.items">{{ item.text }}</li>
-            </ul>
+            </FadeIncomponent>
           </div>
-        </li>
-      </ul>
-    </div>
-  </FadeIncomponent>
+          <ul class="menu-item">
+            <FadeIncomponent>
+              <li v-for="item in card.items">{{ item.text }}</li>
+            </FadeIncomponent>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

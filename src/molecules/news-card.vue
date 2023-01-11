@@ -1,19 +1,30 @@
 <template>
   <ul class="news-card c-flex">
     <li class="column--3" v-for="card in cards" :key="cards.id">
-      <img :src="card.image" alt="" />
+      <FadeIncomponent>
+        <img :src="card.image" alt="" />
+      </FadeIncomponent>
       <p>
-        <time>{{ card.time }}</time>
+        <FadeIncomponent>
+          <time>{{ card.time }}</time>
+        </FadeIncomponent>
       </p>
-      <p>{{ card.text }}</p>
+      <FadeIncomponent>
+        <p>{{ card.text }}</p>
+      </FadeIncomponent>
     </li>
   </ul>
 </template>
 
 <script>
+import FadeIncomponent from "@/atoms/fade-in";
+
 export default {
   name: "NewsCard",
   props: ["cards"],
+  components: {
+    FadeIncomponent,
+  },
 };
 </script>
 

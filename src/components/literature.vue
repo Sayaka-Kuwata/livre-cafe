@@ -1,14 +1,16 @@
 <template>
-  <FadeIncomponent>
-    <div class="guide-inner">
+  <div class="guide-inner">
+    <FadeIncomponent>
       <FloorGuideDetail :title="title" :url="url" />
-      <div class="detail-text">
+    </FadeIncomponent>
+    <div class="detail-text">
+      <FadeIncomponent>
         <p>
           純文学、エンターテイメント、ミステリーなど幅広いジャンルの小説をご用意しております。<br />最新刊はもちろん、海外の小説も取り揃えておりますのでお気軽に手にとってご覧ください。少数ではありますが洋書もございます。中央にテーブルがありますので、座りながらじっくり文学の世界をお楽しみください。
         </p>
-      </div>
+      </FadeIncomponent>
     </div>
-  </FadeIncomponent>
+  </div>
 </template>
 
 <script>
